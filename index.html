@@ -2,60 +2,11 @@
 <html lang="en">
 
 <head>
-  <title>Understanding the Position CSS Property</title>
-  <link href="styles.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>My Homepage</title>
 </head>
 
 <body>
-  <h2>My Cheat Sheet</h2>
-  <header>
-    <h1>Understanding the <em>Position</em> CSS Property</h1>
-    <p>The <strong>position</strong> CSS property sets how an element is positioned in a document. The <strong>top, right, bottom,</strong> and <strong>left</strong> properties determine the final location of positioned elements.</p>
-  </header>
-  <main>
-    <section>
-      <table class="values">
-        <th>Values</th><th>Description</th>
-        <tr><td class="value">Static</td><td class="description">The element is positioned according to the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect. This is the default value.</td></tr>
-        <tr><td class="value">Relative</td><td class="description">The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements; thus, the space given for the element in the page layout is the same as if position were static.</td></tr>
-        <tr><td class="value">Absolute</td><td class="description">The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block. Its final position is determined by the values of top, right, bottom, and left.</td></tr>
-        <tr><td class="value">Fixed</td><td class="description">The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to the initial containing block established by the viewport, except when one of its ancestors has a transform, perspective, or filter property set to something other than none (see the CSS Transforms Spec), in which case that ancestor behaves as the containing block. (Note that there are browser inconsistencies with perspective and filter contributing to containing block formation.) Its final position is determined by the values of top, right, bottom, and left.</td></tr>
-        <tr><td class="value">Sticky</td><td class="description">The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements.</td></tr>
-      </table>
-    </section>
-    <section><h3>Examples</h3><p>In the following examples the position of each <strong>blue</strong> element is maintained as <em>absolute</em>, and I've adjusted the position of the <bold>red</bold> elements according to the CSS code snippets shown below:</p>
-      <ul>
-        <li id="example.static">
-                <code>.red {<br>position: static;<br>left: 350px;<br>}</code>
-                <div class="blue"></div><div class="red" id="static"></div>
-          <p>^ The <strong>red</strong> element falls in line after the code snippet and is not affected at all by the position of the <strong>blue</strong> element.</p>
-        </li>
-        <li id="example.relative">
-                <code>.red {<br>position: relative;<br>left: 350px;<br>}</code>
-                <div class="blue"></div><div class="red" id="relative"></div>
-          <p>^ The <strong>red</strong> element's position is determined by it's neighbor's.</p>
-        </li>
-        <li id="example.absolute">
-                <code>.red {<br>position: absolute;<br>left: 350px;<br>}</code>
-                <div class="blue"></div><div class="red" id="absolute"></div>
-          <p>^ The <strong>red</strong> element is held in position even though the <strong>blue</strong> element already lives here.</p><br>
-        </li>
-        <li id="example.fixed">
-                <code>.red {<br>position: fixed;<br>left: 350px;<br>}</code>
-                <div class="blue"></div><div class="red" id="fixed"></div>
-          <p>^ Oops. Where did it go?</p>
-        </li>
-        <li id="example.sticky">
-                <code>.red {<br>position: sticky;<br>left: 350px;<br>}</code>
-                <div class="blue"></div><div class="red" id="sticky"></div>
-          <p>^ Keep scrolling!<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
-        </li>
-      </ul>
-    </section>
-  </main>
-</body>
+  <a href="./Position.html">Understanding the Position CSS Property (codecademy project)</a>
 
+</body>
 </html>
