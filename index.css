@@ -1,0 +1,19 @@
+body {
+    background-color: #1b1d1f;
+    font-family: 'Montserrat', sans-serif;
+    color:aliceblue;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#image-container {
+    width: 300px;
+}
+
+#image-container img {
+    max-width: 100%;
+}
+
+#links a {
+    color:aqua;
+}
