@@ -2,7 +2,7 @@ body {
     background-color: #1b1d1f;
     font-family: 'Open Sans', sans-serif;
     color:aliceblue;
-    font-size: 32px;
+    font-size: 48px;
     display: grid;
     grid-template-columns: auto 900px auto;
 }
@@ -73,7 +73,7 @@ p {
 
 @media only screen and (orientation: landscape) {
     body {
-        font-size: 24px;
+        font-size: 32px;
     }
     
     main {
