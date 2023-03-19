@@ -3,4 +3,4 @@
 
 Visit my homepage at [https://paulgoble.github.io](https://paulgoble.github.io)
 
-Connect with me on [Linkedin](https://www.linkedin.com/en.epaulgoble)
+Connect with me on [Linkedin](https://www.linkedin.com/in/epaulgoble)
