@@ -1,0 +1,90 @@
+---
+import '../styles/global.css'
+---
+
+<main>
+  <h2 class="main-heading">
+    Hi, my name is Paul.
+  </h2>
+  <h3 class="main-heading">
+    I am a JavaScript developer, engineer, and project manager with a passion for developing modern, full-stack web applications.
+  </h3>
+  <ul id="projects">
+    <li class="card">
+      <h3>blog</h3>
+      <p>A new site is under construction but you can still read my posts on <em>Medium</em>.</p>
+      <a class="align-right" href="https://medium.com/@epaulgoble">read my blog</a>
+    </li>
+    <li class="card">
+      <h3>books</h3>
+      <p>No, I didn't write one, but I do love to read them. 'Books' is a <em>GraphQL</em> web application for managing a library.</p><p>Built with <em>React, Apollo Server, MongoDB Atlas,</em> and using websockets.</p>
+      <a class="align-right" href="https://github.com/paulgoble/library-frontend">frontend repository</a>
+      <a class="align-right" href="https://github.com/paulgoble/graphql">backend repository</a>
+      <a class="align-right" href="https://library-frontend-build.surge.sh/">use the app</a>
+    </li>
+    <li class="card">
+      <h3>react-chat</h3>
+      <p>A React chat app built using <em><a href="https://reactjs.org/docs/react-without-jsx.html">React without JSX</a></em> and <em>Socket.io</em>.</p>
+      <a class="align-right" href="https://github.com/paulgoble/react-chat-app">view repository</a>
+    </li>
+    <li class="card">
+      <h3>football-app</h3>
+      <p> A student project for the Frontend Developer course on Codecademy.com.</p>
+      <p>Built using <em>RTK Query, Express.js</em> and <em>bootstrap-react</em>.</p>
+      <a class="align-right" href="https://github.com/paulgoble/the-football-app">frontend repository</a>
+      <a class="align-right" href="https://github.com/paulgoble/the-football-app-backend">backend repository</a>
+    </li>
+    
+  </ul>
+</main>
+
+<style>
+  #projects {
+    margin-top: 4rem;
+  }
+
+  .main-heading {
+    margin: 1.65rem;
+    margin-right: 0;
+    opacity: 90%;
+    max-width: 390px;
+    min-width: 390px;
+  }
+
+  .card {
+    width: 346px;
+    padding: 10px 18px;
+    background-color: var(--color-secondary-background);
+    border-radius: 3px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card > h3 {
+    margin-left: 0;
+  }
+
+  em {
+    color: var(--color-secondary-text)
+  }
+
+  @media (hover: none) and (max-width: 480px) {
+    h2 {
+      font-size: 48px;
+    }
+
+    .main-heading {
+      margin: 1rem;
+      max-width: 688px;
+      min-width: 580px;
+      text-align: center;
+    }
+    .card {
+      width: 94%;
+      margin-left: 0;
+      padding: 1rem;
+    }
+  }
+
+</style>

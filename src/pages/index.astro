@@ -1,0 +1,147 @@
+---
+import '../styles/global.css'
+import MainContent from "../components/MainContent.astro";
+---
+
+<html lang="en" color-mode="dark">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Hello World ^_^</title>
+	</head>
+  
+	<body>
+    <div id="left-margin"></div>
+    <div id="main">  
+      <header id="header">
+        <h2>Paul Goble | JavaScript Engineer</h2>
+        <img id="sun-moon" src="/day_moon_night_sun_icon.svg" />
+      </header>   
+      <div id="sidebar">
+        <img id="img-profile" src="IMG_0916_sm.jpg" width="190px" />
+        <ul id="contact-nav">
+          <li><a href="mailto:epaulgoble@gmail.com">epaulgoble@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/epaulgoble/">linkedin.com/en/epaulgoble</a></li>
+          <li><a href="https://www.github.com/paulgoble">www.github.com/paulgoble</a></li>
+        </ul>
+      </div>
+      <div id="main-content">
+        <img class="mobile-only" src="IMG_0916_sm.jpg" width="350px" />
+        <MainContent />
+        <footer>
+          <p>This page was created with <a href="https://astro.build/"><em>Astro.js</em></a></p>
+        </footer>
+      </div>
+    </div>
+    <div id="right-margin"></div>
+	</body>
+  <script>
+    const toggleColorMode = (e: MouseEvent) => {
+      const colorMode = document.documentElement.getAttribute("color-mode");
+      if (colorMode === "dark") {
+        document.documentElement.setAttribute("color-mode", "light")
+      } else {
+        document.documentElement.setAttribute("color-mode", "dark")
+      }
+    }
+    
+    const toggleButton = document.getElementById("sun-moon");
+    toggleButton?.addEventListener('click', toggleColorMode);
+  </script>
+</html>
+
+<style>
+  body {
+    display: grid;
+    grid-template-columns: 1fr var(--content-width) 1fr;
+    overflow-x: hidden;
+  }
+
+  img {
+    border-radius: 50%;
+  }
+
+  #sun-moon {
+    transform: rotate(var(--rotate-button-normal));
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    background-color: var(--color-button-background);
+    border-radius: 50%;
+    width: 38px;
+  }
+
+  #sun-moon:hover {
+    /* transform: rotate(var(--rotate-button-hover)); */
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    background-color: var(--color-button-hover);
+    cursor: pointer;
+    color: var(--color-background);
+  }
+
+  #header {
+    width: var(--content-width);
+    position: fixed;
+    height: var(--header-height);
+    top: 0;
+    z-index: 1;
+    opacity: 0.85;
+    background-color: var(--color-background);
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  h2 {
+    color: var(--color-primary-text)
+  }
+
+  #sidebar {
+    width: var(--sidebar-width);
+    position: sticky;
+    float: left;
+    top: var(--header-height);
+    text-align: end;
+    margin-top: 2.5rem;
+  }
+
+  #img-profile {
+    margin-top: 20px;
+  }
+
+  #main-content {
+    margin-left: var(--sidebar-width);
+    margin-top: var(--header-height);
+    padding: 0.25rem 2.25rem;
+  }
+
+  @media (hover: none) and (max-width: 480px) {
+    
+    #header {
+      opacity: 1;
+    }
+
+    #sun-moon {
+      width: 50px;
+    }
+    
+    #sidebar {
+      display: none;
+    }
+
+    #main-content {
+      margin-left: auto;
+      padding: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
+
+</style>
